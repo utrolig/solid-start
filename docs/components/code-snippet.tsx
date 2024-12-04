@@ -86,7 +86,10 @@ function TabContent(props: { manager: string, command: string }) {
           aria-hidden="true"
           class="hidden dark:block absolute inset-0 bg-gradient-to-tr from-blue-300 rounded-md via-blue-300/70 to-blue-300 opacity-5 pointer-events-none"
         />
-        <span class="dark:text-cyan-200 text-cyan-600">{props.manager}</span> {' '+props.command}
+        <span>
+          <span class="dark:text-cyan-200 text-cyan-600">{props.manager}</span>
+          {" " + props.command}
+        </span>
       </pre>
     </Tabs.Content>
   );
